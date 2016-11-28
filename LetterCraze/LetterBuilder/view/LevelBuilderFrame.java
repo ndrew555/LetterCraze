@@ -20,6 +20,7 @@ public class LevelBuilderFrame extends JFrame {
 		menuGui.setBorder(new EmptyBorder(50, 50, 50, 50));
 		menuGui.setLayout(new BorderLayout(0, 0));
 		setContentPane(menuGui);
+		
 	}
 
 	public void goToNewMenu() {
@@ -27,6 +28,8 @@ public class LevelBuilderFrame extends JFrame {
 		newLevelGui.setBorder(new EmptyBorder(50, 50, 50, 50));
 		newLevelGui.setLayout(new BorderLayout(0, 0));
 		setContentPane(newLevelGui);
+		invalidate();
+		repaint();
 		
 	}
 	
@@ -35,11 +38,15 @@ public class LevelBuilderFrame extends JFrame {
 		builderGui.setBorder(new EmptyBorder(50, 50, 50, 50));
 		builderGui.setLayout(new BorderLayout(0, 0));
 		setContentPane(builderGui);
+		invalidate();
+		repaint();
 		
 	}
 	
 	public void goToMenu() {
 		setContentPane(menuGui);
+		invalidate();
+		repaint();
 		
 	}
 
